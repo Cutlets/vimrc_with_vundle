@@ -21,7 +21,7 @@ fi
 if [ ! -e ~/.vimrc ]; then
     wget https://raw.githubusercontent.com/Cutlets/vimrc_with_vundle/main/vimrc_c79 -O ~/.vimrc
 else
-    cat ~/.vimrc > vimrc_backup.bak
+    cat ~/.vimrc > ~/vimrc_backup.bak
     wget https://raw.githubusercontent.com/Cutlets/vimrc_with_vundle/main/vimrc_c79 -O ~/.vimrc
 fi
 
