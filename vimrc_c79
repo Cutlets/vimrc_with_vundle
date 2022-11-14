@@ -1,0 +1,79 @@
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'machakann/vim-highlightedyank'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'frazrepo/vim-rainbow'
+Plugin 'nanotech/jellybeans.vim'
+
+call vundle#end()
+
+" Print Line number
+set number
+
+" Auto Indent
+set ai
+
+" Smart Indent
+set si
+
+" C style Indent
+set cindent
+
+" Set tap width setting
+set et ts=4 sw=4 sts=4
+
+" Set Auto empty fill to n space
+" set shiftwidth=4
+
+" Set tap to n space
+" set tabstop=4
+
+" Set tap expand
+" set et
+
+" Ignore Upper or Lower letter
+set ignorecase
+
+" Highlight on search function
+set hlsearch
+
+" Allow move via direction key
+set nocompatible
+
+" Set default encoding to UTF-8
+set fileencodings=utf-8
+
+" Allow backspace
+set bs=indent,eol,start
+
+" Show cursor position in status line
+set ruler
+
+" Show file title in status line
+set title
+
+" Show matched bracket in editor
+set showmatch
+
+" Turn on the syntax highlight
+syntax on
+
+" Filetype indent
+filetype plugin indent on
+
+" Allow cursor move via mouse
+" set mouse=a
+
+" delimitMate: Auto bracket coupler
+let delimitMate_expand_cr=1
+
+" vim-indent-guides: Show indent Layer
+let g:indent_guides_enable_on_vim_startup=1
+colorscheme jellybeans
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+hi IndentGuidesOdd  ctermbg=lightgrey
+hi IndentGuidesEven ctermbg=darkgrey
